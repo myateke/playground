@@ -10,13 +10,21 @@ var _react2 = _interopRequireDefault(_react);
 
 var _semanticUiReact = require('semantic-ui-react');
 
+require('./../assets/stylesheets/gc-common.css');
+
+require('./../assets/stylesheets/styles.css');
+
+var _logo_ = require('./../assets/img/logo_3.jpg');
+
+var _logo_2 = _interopRequireDefault(_logo_);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var CardExampleCard = function CardExampleCard() {
+var ProfileCard = function ProfileCard() {
   return _react2.default.createElement(
     _semanticUiReact.Card,
     null,
-    _react2.default.createElement('img', { src: '.assets/img/logo_3.jpg', alt: '' }),
+    _react2.default.createElement('img', { src: _logo_2.default, alt: '', className: 'gc-width-100 height-auto' }),
     _react2.default.createElement(
       _semanticUiReact.Card.Content,
       null,
@@ -37,20 +45,15 @@ var CardExampleCard = function CardExampleCard() {
       _react2.default.createElement(
         _semanticUiReact.Card.Description,
         null,
-        'Masahiro is a musician living in Nashville.'
+        '\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB'
       )
     ),
     _react2.default.createElement(
       _semanticUiReact.Card.Content,
       { extra: true },
-      _react2.default.createElement(
-        'a',
-        null,
-        _react2.default.createElement(_semanticUiReact.Icon, { name: 'user' }),
-        '22 Friends'
-      )
+      _react2.default.createElement(_semanticUiReact.Flag, { name: 'france' })
     )
   );
 };
 
-exports.default = CardExampleCard;
+exports.default = ProfileCard;
