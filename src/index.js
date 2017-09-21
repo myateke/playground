@@ -12,12 +12,20 @@ import './assets/stylesheets/gc-common.css';
 ReactDOM.render(
   <section className="mAll70">
     <h1>Profile</h1>
-      <Grid columns={2}>
+      <Grid
+        columns={2}
+        centered
+      >
           <Grid.Row>
-              <Grid.Column width={6}>
+              <Grid.Column
+                width={4}
+              >
                   <ProfileCard />
               </Grid.Column>
-              <Grid.Column width={10} className="bg-white">
+              <Grid.Column
+                width={12}
+                className="bg-white"
+              >
                   <ListDivided />
               </Grid.Column>
           </Grid.Row>
