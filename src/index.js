@@ -4,30 +4,31 @@ import ReactDOM from 'react-dom';
 
 import ProfileCard from './top/card.jsx';
 import ListDivided from './top/list.jsx';
+import BarChart from './Chart/index.jsx';
+import LineChart from './Chart/Line/index.jsx';
+import RadarChart from './Chart/Radar/index.jsx';
+
 import { Grid
        } from 'semantic-ui-react';
 
-import './assets/stylesheets/gc-common.css';
+ import './assets/stylesheets/gc-common.css';
+ import './assets/stylesheets/styles.scss';
 
 ReactDOM.render(
   <section className="mAll70">
-    <h1>Profile</h1>
+    <h1>Playground</h1>
       <Grid
         columns={2}
         centered
       >
           <Grid.Row>
-              <Grid.Column
-                width={4}
-              >
-                  <ProfileCard />
-              </Grid.Column>
-              <Grid.Column
-                width={12}
-                className="bg-white"
-              >
-                  <ListDivided />
-              </Grid.Column>
+              <BarChart/>
+          </Grid.Row>
+          <Grid.Row>
+              <LineChart/>
+          </Grid.Row>
+          <Grid.Row>
+              <RadarChart/>
           </Grid.Row>
       </Grid>
 

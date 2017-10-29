@@ -7,7 +7,7 @@ import {
 } from 'semantic-ui-react';
 
 import './../assets/stylesheets/gc-common.css';
-import './../assets/stylesheets/styles.css';
+import './../assets/stylesheets/styles.scss';
 
 import Logo_1 from './../assets/img/logo_3.jpg';
 
